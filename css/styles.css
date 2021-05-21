@@ -1,0 +1,178 @@
+/*
+	Created by: Josh Wafford
+	File: styles.css
+	Date: 24MAY2021
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, img, div, figure,  {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Style rules for header */
+header {
+	margin: 2%;
+	font-size: 2em;
+	color: #fff;
+	float: left;
+}
+
+header h1 {
+	font-family: Magneto, "Times New Roman", sans-serif;
+}
+
+header h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Style rules for body */
+body {
+	background-color: #000;
+}
+
+/* Style rules for navigation */
+nav {
+	clear: right;
+}
+
+nav ul {
+	margin: 0 5%;
+	padding: 4% 0;
+	list-style-type: none;
+	text-align: right;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 5%;
+	font-size: 1.25em;
+}
+
+nav li a {
+	color: #fff;
+	text-decoration: none;
+	font-family: Magneto, "Times New Roman", sans-serif;
+}
+
+/* Style rules for main */
+main {
+	clear: both;
+	font-size: 1.25em;
+	text-align: center;
+	color: #fff;
+	font-family: "Times New Roman", sans-serif;
+	padding: 5em;
+}
+
+/* Style rules for footer */
+footer p {
+	font-size: 1em;
+	text-align: right;
+	color: #fff;
+	padding: 0 10%;
+	font-family: Magneto, "Times New Roman", sans-serif;
+}
+
+/* Style rules for img */
+img {
+	max-width: 100%;
+	display: center;
+}
+
+/* Style rules for miniatures */
+figure {
+	position: relative;
+	font-size: 1.5em;
+	display: grid;
+}
+
+.miniatures {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-column: span 4;
+}
+
+.minis {
+	width: 40%;
+	padding: 0 50%;
+}
+
+/* Style ruels for Monsters/Lore */
+table {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100%;
+}
+
+table a {
+	text-decoration: none;
+	color: #000;
+}
+
+th {
+	font-size: 1.25em;
+}
+
+tr {
+	text-align: left;
+}
+
+tr:nth-child(even) {
+		background-color: #ccc;
+		color: #000;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.right, .left {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.25em;
+}
+
+.lore {
+	text-align: left;
+}
+
+.lore-list h1 {
+	display: none;
+}
+
+#aboleth, #animated-armor, #ankheg, #azer {
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+	/* Background Image Links */
+	#aboleth {background-image: url(../images/aboleth.png);}
+	#animated-armor {background-image: url(../images/animated-armor.png);}
+	#ankheg {background-image: url(../images/ankheg.png);}
+	#azer {background-image: url(../images/azer.png);}
+
+/* Style rules for contact */
+.email {
+	text-decoration: none;
+	font-size: 1.25em;
+	color: #fff;
+	font-family: Magneto, "Times New Roman", sans-serif;
+}
+
+/* Media Query for Print */
+@media print {
+	
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+	
+}
