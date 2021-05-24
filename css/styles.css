@@ -1,0 +1,172 @@
+/*
+	Created by: Josh Wafford
+	File: styles.css
+	Date: 24MAY2021
+*/
+
+body {
+	background: #000;
+	font-family: Magneto, "Times New Roman", sans-serif;
+}
+
+/* Style rules for header */
+header {
+	float: left;
+	width: 25%;
+}
+
+header img {
+	margin: 0 auto;
+}
+
+/* Style rules for nav */
+nav {
+	text-align: right;
+	clear: right;
+}
+
+nav ul {
+	margin: 0 5%;
+	padding: 4% 0;
+	list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 5%;
+	font-size: 1.25em;
+}
+
+nav li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Style rules for home main */
+.home {
+	clear: both;
+	font-size: 1.25em;
+	text-align: center;
+	color: #fff;
+	font-family: "Times New Roman", sans-serif;
+	padding: 5em;
+}
+
+/* Style rules for footer */
+footer p {
+	font-size: 1em;
+	text-align: right;
+	color: #fff;
+	padding: 0 10%;
+	font-family: Magneto, "Times New Roman", sans-serif;
+}
+
+/* Style rules for cardminis */
+.cardminis {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cardminis > * {
+	flex: 0 1 20%;
+}
+
+/* Style rules for cardlore */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+.cardlore {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cardlore > * {
+	flex: 0 1 20%;
+}
+
+.card {
+	position: relative;
+	color: #000;
+	padding: 10rem 0 0;
+	max-width: 35ch;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	transition: transform 500ms ease;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+.card-content {
+	padding: 1.5rem;
+	transform: translateY(65%);
+	transition: transform 500ms ease;
+}
+
+.card:hover .card-content {
+	transform: translateY(0);
+}
+
+.card-title {
+	position: relative;
+	width: max-content;
+	color: #fff;
+}
+
+.card-title::after {
+	content: "";
+	position: absolute;
+	height: 4px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: #fff;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 500ms ease;
+}
+
+.card:hover .card-title::after {
+	transform: scaleX(1);
+}
+
+.card-body {
+	color: #fff;
+	font-family: "Times New Roman", sans-serif;
+}
+
+.button {
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	background-color: #000;
+	padding: 0.5em 1.25em;
+	border-radius: 0.25rem;
+}
+
+.button:hover,
+.button:focus {
+	background-color: #fff;
+	color:#000
+}
+
+/* Stylre rules for lore pages */
+.lore-page {
+	clear: left;
+}
+
+.lore-pic img {
+	float: left;
+	margin-right: 1em;
+}
+
+.lore {
+	color: #fff;
+}
+
+.lore p {
+	font-family: "Times New Roman", sans-serif;
+}
