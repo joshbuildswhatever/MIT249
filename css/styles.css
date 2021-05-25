@@ -4,6 +4,10 @@
 	Date: 24MAY2021
 */
 
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
 body {
 	background: #000;
 	font-family: Magneto, "Times New Roman", sans-serif;
@@ -11,40 +15,36 @@ body {
 
 /* Style rules for header */
 header {
-	float: left;
-	width: 25%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1% 5%;
 }
 
-header img {
-	margin: 0 auto;
+.logo {
+	cursor: pointer;
+	margin-right: 30%;
 }
 
 /* Style rules for nav */
-nav {
-	text-align: right;
-	clear: right;
-}
-
-nav ul {
-	margin: 0 5%;
-	padding: 4% 0;
-	list-style-type: none;
-}
-
-nav li {
-	display: inline-block;
-	margin-left: 5%;
+li, a {
+	font-family: Magneto, "Times New Roman", sans-serif;
 	font-size: 1.25em;
+	text-decoration: none;
+	color: #fff;
 }
 
-nav li a {
-	color: #fff;
-	text-decoration: none;
+.navlinks {
+	list-style: none;
+}
+
+.navlinks li {
+	display: inline-block;
+	padding: 10px;
 }
 
 /* Style rules for home main */
 .home {
-	clear: both;
 	font-size: 1.25em;
 	text-align: center;
 	color: #fff;
@@ -57,7 +57,7 @@ footer p {
 	font-size: 1em;
 	text-align: right;
 	color: #fff;
-	padding: 0 10%;
+	padding: 10% 10% 1%;
 	font-family: Magneto, "Times New Roman", sans-serif;
 }
 
@@ -65,20 +65,43 @@ footer p {
 .cardminis {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .cardminis > * {
 	flex: 0 1 20%;
 }
 
-/* Style rules for cardlore */
-*, *::before, *::after {
-	box-sizing: border-box;
+.models {
+	width: 300px;
+	height: 500px;
+	margin: .5% 1%;
+	background-size: cover;
+	color: #fff;
+	padding: 1em 0 0;
+	border-radius: 0.5rem;
 }
 
+.models:hover{
+	transform: scale(1.10);
+	transition: all 500ms ease;
+}
+
+.cardimage {
+	height: 500px;
+	background-size: cover;
+	border-radius: 0.5rem;
+}
+
+.bugbears {background-image: url(../images/bugbears-unpainted.jpg)}
+.goblins {background-image: url(../images/goblins.jpg)}
+.hobgoblins {background-image: url(../images/hobgoblins-unpainted.jpg)}
+
+/* Style rules for cardlore */
 .cardlore {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .cardlore > * {
@@ -86,71 +109,49 @@ footer p {
 }
 
 .card {
-	position: relative;
+	background: #fff;
+	width: 300px;
+	height: 500px;
+	margin: .5% 1%;
+	background-size: cover;
 	color: #000;
-	padding: 10rem 0 0;
-	max-width: 35ch;
+	padding: 1em 0 0;
 	border-radius: 0.5rem;
-	overflow: hidden;
-	transition: transform 500ms ease;
 }
 
-.card:hover {
-	transform: scale(1.05);
-}
-
-.card-content {
-	padding: 1.5rem;
-	transform: translateY(65%);
-	transition: transform 500ms ease;
-}
-
-.card:hover .card-content {
-	transform: translateY(0);
+.card:hover{
+	transform: scale(1.10);
+	transition: all 500ms ease;
 }
 
 .card-title {
 	position: relative;
 	width: max-content;
-	color: #fff;
-}
-
-.card-title::after {
-	content: "";
-	position: absolute;
-	height: 4px;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background: #fff;
-	transform: scaleX(0);
-	transform-origin: left;
-	transition: transform 500ms ease;
-}
-
-.card:hover .card-title::after {
-	transform: scaleX(1);
+	color: #000;
+	padding: 0 .5em;
+	margin-top: -1.25em;
 }
 
 .card-body {
-	color: #fff;
+	color: #000;
 	font-family: "Times New Roman", sans-serif;
+	padding: 0 1em;
 }
 
 .button {
 	cursor: pointer;
 	display: inline-block;
 	text-decoration: none;
-	color: #fff;
-	background-color: #000;
-	padding: 0.5em 1.25em;
+	color: #000;
+	background-color: #fff;
+	padding: 0.25em 1em;
 	border-radius: 0.25rem;
+	margin-left: 1em;
 }
 
-.button:hover,
-.button:focus {
-	background-color: #fff;
-	color:#000
+.button:hover, .button:focus {
+	background-color: #000;
+	color:#fff;
 }
 
 /* Stylre rules for lore pages */
@@ -161,6 +162,7 @@ footer p {
 .lore-pic img {
 	float: left;
 	margin-right: 1em;
+	border-radius: 0.5rem;
 }
 
 .lore {
