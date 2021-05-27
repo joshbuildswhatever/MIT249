@@ -45,11 +45,45 @@ li, a {
 
 /* Style rules for home main */
 .home {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	font-size: 1.25em;
-	text-align: center;
 	color: #fff;
 	font-family: "Times New Roman", sans-serif;
 	padding: 5em;
+}
+
+.first {
+	text-align: right;
+}
+
+.dndlogo {
+	float: right;
+	margin: 0 1em 5em;
+	width: 25%;
+}
+
+.second {
+	text-align: left;
+}
+
+.display1 {
+	float: left;
+	margin: 0 1em 5em 0;
+	width: 25%;
+	border-radius: 0.5rem;
+}
+
+.third {
+	text-align: right;
+}
+
+.display2 {
+	float: right;
+	margin: 0 1em 5em;
+	width: 25%;
+	border-radius: 0.5rem;
 }
 
 /* Style rules for footer */
@@ -82,11 +116,6 @@ footer p {
 	border-radius: 0.5rem;
 }
 
-.models:hover{
-	transform: scale(1.10);
-	transition: all 500ms ease;
-}
-
 .cardimage {
 	height: 500px;
 	background-size: cover;
@@ -96,6 +125,7 @@ footer p {
 .bugbears {background-image: url(../images/bugbears-unpainted.jpg)}
 .goblins {background-image: url(../images/goblins-painted.jpg)}
 .hobgoblins {background-image: url(../images/hobgoblins-unpainted.jpg)}
+.lich {background-image: url(../images/lich-painted.jpg)}
 
 /* Style rules for cardlore */
 .cardlore {
@@ -157,7 +187,6 @@ footer p {
 
 /* Stylre rules for lore pages */
 .lore-page {
-	clear: left;
 	margin: 0 5em;
 }
 
