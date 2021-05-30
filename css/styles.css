@@ -101,13 +101,6 @@ footer p {
 	margin: 0 10%;
 }
 
-/* Style rules for cardminis */
-.cardminis {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
 /*.models:hover{
 	transform: scale(1.10);
 	transition: all 500ms ease;
@@ -138,13 +131,6 @@ footer p {
 .hobgoblins {background-image: url(../images/hobgoblins-unpainted.jpg)}
 .lich {background-image: url(../images/lich-painted.jpg)}
 
-/* Style rules for cardlore */
-.cardlore {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
 .cardlore > * {
 	flex: 0 1 20%;
 }
@@ -161,9 +147,11 @@ footer p {
 	overflow: hidden;
 }
 
-.card:hover{
-	transform: scale(1.10);
-	transition: all 500ms ease;
+@media (hover) {
+	.card:hover {
+		transform: scale(1.10);
+		transition: all 500ms ease;
+	}
 }
 
 .card-title {
@@ -213,4 +201,20 @@ footer p {
 
 .lore p {
 	font-family: "Times New Roman", sans-serif;
+}
+
+@media (min-width: 1015px) {
+	/* Style rules for cardminis */
+	.cardminis {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	/* Style rules for cardlore */
+	.cardlore {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
