@@ -108,6 +108,11 @@ footer p {
 	justify-content: center;
 }
 
+/*.models:hover{
+	transform: scale(1.10);
+	transition: all 500ms ease;
+}*/
+
 .cardminis > * {
 	flex: 0 1 20%;
 }
@@ -181,7 +186,7 @@ footer p {
 	text-decoration: none;
 	color: #000;
 	background-color: #fff;
-	padding: 0.25em 1em;
+	padding: 0.25em 0.5em;
 	border-radius: 0.25rem;
 	margin-left: 1em;
 }
