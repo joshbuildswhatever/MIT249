@@ -51,7 +51,7 @@ li, a {
 	font-size: 1.25em;
 	color: #fff;
 	font-family: "Times New Roman", sans-serif;
-	padding: 5em;
+	padding: 0 5rem;
 }
 
 .first {
@@ -60,7 +60,7 @@ li, a {
 
 .dndlogo {
 	float: right;
-	margin: 0 1em 5em;
+	margin: 0 1rem 5rem;
 	width: 25%;
 }
 
@@ -70,7 +70,7 @@ li, a {
 
 .display1 {
 	float: left;
-	margin: 0 1em 5em 0;
+	margin: 0 1rem 5rem 0;
 	width: 25%;
 	border-radius: 0.5rem;
 }
@@ -81,18 +81,24 @@ li, a {
 
 .display2 {
 	float: right;
-	margin: 0 1em 5em;
+	margin: 0 0 0 1rem;
 	width: 25%;
 	border-radius: 0.5rem;
 }
 
 /* Style rules for footer */
 footer p {
-	font-size: 1em;
+	font-size: 1rem;
 	text-align: right;
 	color: #fff;
 	padding: 10% 10% 1%;
 	font-family: Magneto, "Times New Roman", sans-serif;
+}
+
+.content {
+	color: #fff;
+	font-size: 1.25rem;
+	margin: 0 10%;
 }
 
 /* Style rules for cardminis */
