@@ -19,6 +19,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1% 5%;
+	color: #fff;
+	font-size: 1.25rem;
 }
 
 .logo {
@@ -29,7 +31,7 @@ header {
 /* Style rules for nav */
 li, a {
 	font-family: Magneto, "Times New Roman", sans-serif;
-	font-size: 1.25em;
+	font-size: 1.25rem;
 	text-decoration: none;
 	color: #fff;
 }
