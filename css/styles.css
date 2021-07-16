@@ -73,7 +73,7 @@ footer p {
 	font-size: 1rem;
 	text-align: right;
 	color: #fff;
-	padding: 1% 10% 1%;
+	padding: 10% 10% 1%;
 	font-family: Magneto, "Times New Roman", sans-serif;
 }
 
@@ -121,6 +121,13 @@ footer p {
 .hobgoblins {background-image: url(../images/hobgoblins-unpainted.jpg)}
 .nothic {background-image: url(../images/comingsoon.jpg)}
 .stone-giant {background-image: url(../images/comingsoon.jpg)}
+
+.countdown {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
 
 .yasashii {
 	margin-left: 15%;
