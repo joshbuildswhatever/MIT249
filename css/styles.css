@@ -68,6 +68,12 @@ li, a {
 	margin-right: 20%;
 }
 
+#text {
+	text-align: center;
+	color: #fff;
+	font-size: 2rem;
+}
+
 /* Style rules for footer */
 footer p {
 	font-size: 1rem;
