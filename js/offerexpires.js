@@ -32,4 +32,10 @@ function changeText(){
 	card[5].style.color = "red";
 	card[6].style.color = "yellow";
 	card[7].style.color = "red";
+	
+	var click = document.getElementById("click");
+	
+	click.addEventListener("click", function(){
+		alert("Hello, anything in green is a completed miniature, those in orange need pain, red designates the need for a print and paint, and yellow means a complete product is coming soon(Check out the timer!)");
+	});
 }
