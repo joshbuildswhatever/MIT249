@@ -20,3 +20,16 @@ const countdown = () => {
 };
 
 setInterval(countdown, 1000);
+
+function changeText(){
+	var card = document.getElementsByClassName('title');
+	
+	card[0].style.color = "green";
+	card[1].style.color = "green";
+	card[2].style.color = "orange";
+	card[3].style.color = "orange";
+	card[4].style.color = "red";
+	card[5].style.color = "red";
+	card[6].style.color = "yellow";
+	card[7].style.color = "red";
+}
