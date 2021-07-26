@@ -39,3 +39,7 @@ function changeText(){
 		alert("Hello, anything in green is a completed miniature, those in orange need pain, red designates the need for a print and paint, and yellow means a complete product is coming soon(Check out the timer!)");
 	});
 }
+
+$(function(){
+	$(".models").hide().slideDown(2000);
+});
