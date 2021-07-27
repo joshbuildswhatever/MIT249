@@ -1,3 +1,4 @@
+/* Chapter 3: Offer Expires */
 const countdown = () => {
 	const countDate = new Date("August 1, 2021 00:00:00").getTime();
 	const now = new Date().getTime();
@@ -21,6 +22,7 @@ const countdown = () => {
 
 setInterval(countdown, 1000);
 
+/* Chapters 5&6: Events */
 function changeText(){
 	var card = document.getElementsByClassName('title');
 	
@@ -40,6 +42,8 @@ function changeText(){
 	});
 }
 
+
+/* Chapters 7&8: jQuery */
 $(function(){
 	$(".models").hide().slideDown(2000);
 });
