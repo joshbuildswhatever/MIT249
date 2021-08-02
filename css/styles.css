@@ -269,4 +269,60 @@ footer p {
 	.container ul li a:hover {
 		color: red;
 	}
+	
+/* API Styling */
+#content {
+	color: #fff;
+}
+
+.api {
+	width: 400px;
+	float: left;
+}
+
+form {
+	margin: 0;
+	font-size: 160%;}
+}
+
+label {
+	float: left; 
+	width: 6em;
+	margin-top: 10px;
+}
+
+input, textarea {
+	border-radius: 3px;
+	border: none;
+	box-sizing: border-box;
+	background-color: #efefef;
+	font-size: 100%;
+	width: 100%;
+	padding: 0.3em 0.5em 0.3em 0.5em;
+}
+
+textarea {
+	height: 5em;
+	line-height: 1.4em;
+}
+
+input[type=submit] {
+	background-color: #fff;
+	color: #000;
+	font-weight: bold;
+	display: inline-block;
+	width: auto;
+	clear:left;
+	float: right;
+	padding: 0.3em 0.5em 0.3em 0.5em;
+	margin: 0.5em 0 0 0;
+}
+
+input[type=submit]:hover {
+	background-color: #000;
+	cursor: pointer;
+}
+
+#container {line-height: 1.6em; margin: 2em 6em 3em 6em;}
+
 }
