@@ -30,70 +30,69 @@
 	<main>
 		<div class="content">
 			<p>Welcome to my miniature gallery. Below you'll see images of the miniatures I have painted and future projects I'm excited to complete. Painting has always been a passion of mine and in 2019 I turned my talents to the hobby world. I still consider myself a beginner when it comes to painting miniatures and wish to use this page as a portfolio as I progress. <button onclick="changeText();">Click me!</button><button id="click">Click me next!</button></p>
-			
+		
+		<section>
+			<ul>
+				<li class="list active" data-filter="all">All</li>
+				<li class="list" data-filter="painted">Painted</li>
+				<li class="list" data-filter="printed">Printed</li>
+				<li class="list" data-filter="comingsoon">Coming Soon</li>
+			</ul>
+		</section>
+		
 		<div class="cardminis">
-			<div class="models">
+			<div class="models" data-item="painted">
 				<h3 class="title">Acererak the Lich - 2019</h3>
+				<img src="images/acererakthelich-painted.jpg">
 				<a href="materials/acererakthelich.html">
 				<div class="cardimage acererak-the-lich"></div></a>
 			</div>
 			
-			<div class="models">
+			<div class="models" data-item="painted">
 				<h3 class="title">Goblins - 2021</h3>
+				<img src="images/goblins-painted.jpg">
 				<a href="materials/goblins.html">
 				<div class="cardimage goblins"></div></a>
 			</div>
 			
-			<div class="models">
+			<div class="models" data-item="printed">
 				<h3 class="title">Bugbears</h3>
+				<img src="images/bugbears-unpainted.jpg">
 				<a href="materials/bugbears.html">
 				<div class="cardimage bugbears"></div></a>
 			</div>
 			
-			<div class="models">
+			<div class="models" data-item="printed">
 				<h3 class="title">Hobgoblins</h3>
+				<img src="images/hobgoblins-unpainted.jpg">
 				<a href="materials/hobgoblins.html">
 				<div class="cardimage hobgoblins"></div></a>
 			</div>	
 			
-			<div class="models">
+			<div class="models" data-item="comingsoon">
 				<h3 class="title">Animated Armor</h3>
+				<img src="images/comingsoon.jpg">
 				<a href="materials/animated-armor.html">
 				<div class="cardimage animated-armor"></div></a>
 			</div>
 			
-			<div class="models">
+			<div class="models" data-item="comingsoon">
 				<h3 class="title">Grick</h3>
+				<img src="images/comingsoon.jpg">
 				<a href="materials/grick.html">
 				<div class="cardimage grick"></div></a>
 			</div>
 			
-			<div class="models">
+			<div class="models" data-item="comingsoon">
 				<h3 class="title">Nothic</h3>
+				<img src="images/comingsoon.jpg">
 				<a href="materials/nothic.html">
 				<div class="cardimage nothic"></div></a>
-				<div class="countdown">
-					<div class="container-day">
-						<h3 class="day">00</h3>
-						<h4>Days</h4>
-					</div>
-					<div class="container-hours">
-						<h3 class="hour">00</h3>
-						<h4>Hours</h4>
-					</div>
-					<div class="container-minutes">
-						<h3 class="minute">00</h3>
-						<h4>Minutes</h4>
-					</div>
-					<div class="container-seconds">
-						<h3 class="second">00</h3>
-						<h4>Seconds</h4>
-					</div>
-				</div>
 			</div>
 			
-			<div class="models">
+			<div class="models" data-item="comingsoon">
 				<h3 class="title">Stone Giant</h3>
+				<img src="images/comingsoon.jpg">
 				<a href="materials/stone-giant.html">
 				<div class="cardimage stone-giant"></div></a>
 			</div>
@@ -104,6 +103,7 @@
 		<script src="js/offerexpires.js"></script>
 		<script src="js/event.js"></script>
 		<script src="js/jquery.js"></script>
+		<script src="js/sorting.js"></script>
 		
 	</main>
 	
