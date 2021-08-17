@@ -98,36 +98,6 @@ footer p {
 	}
 }
 
-.cardminis > * {
-	flex: 0 1 20%;
-}
-
-.models {
-	background-size: cover;
-	color: #fff;
-	border-radius: 0.5rem;
-	margin-left: 1%;
-	margin-right: 1%;
-}
-
-.cardimage {
-	width: 100%;
-	height: 400px;
-	background-size: cover;
-	background-position: center;
-	border-radius: 0.5rem;
-	margin-top: -.5rem;
-}
-
-.acererak-the-lich {background-image: url(../images/acererakthelich-painted.jpg)}
-.animated-armor {background-image: url(../images/comingsoon.jpg)}
-.bugbears {background-image: url(../images/bugbears-unpainted.jpg)}
-.goblins {background-image: url(../images/goblins-painted.jpg)}
-.grick {background-image: url(../images/comingsoon.jpg)}
-.hobgoblins {background-image: url(../images/hobgoblins-unpainted.jpg)}
-.nothic {background-image: url(../images/comingsoon.jpg)}
-.stone-giant {background-image: url(../images/comingsoon.jpg)}
-
 .countdown {
 	list-style-type: none;
 	display: flex;
@@ -227,11 +197,7 @@ footer p {
 
 @media (min-width: 1015px) {
 	/* Style rules for cardminis */
-	.cardminis {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
+	
 	
 	/* Style rules for cardlore */
 	.cardlore {
@@ -377,6 +343,67 @@ input[type=submit]:hover {
 	opacity: .5;
 	width: 35px;
 	height: 35px;
+}
+
+/* Sorting styling */
+section {
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 40px auto;
+}
+
+section ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+section ul li {
+	list-style: none;
+	background: #fff;
+	color: #000;
+	margin: 5px;
+	border-radius: .5rem;
+	cursor: pointer;
+}
+
+section ul li.active {
+	background: #ff0000;
+	color: #fff;
+}
+
+.cardminis {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.cardminis .models {
+	position: relative;
+	width: 250px;
+	height: 500px;
+	margin: 5px;
+	display: block;
+	border-radius: .5rem;
+}
+.cardminis .models img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	object-fit: cover;
+}
+
+.cardminis .models.hide {
+	display: none;
 }
 
 }
