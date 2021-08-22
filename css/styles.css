@@ -406,4 +406,12 @@ section ul li.active {
 	display: none;
 }
 
+/* Form Style */
+#form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
 }
